@@ -1,0 +1,71 @@
+{
+   "awards": [{ 
+      "icon":     "award",     
+      "place":    "1st place Fashion show 2019",
+      "content":  "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+   }, {    
+      "icon":     "award",  
+      "place":    "1st place Fashion show 2017",
+      "content":  "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+   }, {   
+      "icon":     "award",   
+      "place":    "2nd place Fashion show 2015",
+      "content":  "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+   }],
+   "shows": [
+      {"date":     "2019 Haute Couture Collection (Autumn/Winter)"},
+      {"date":     "2017 Haute Couture Collection (Spring/Summer)"},
+      {"date":     "2016 Haute Couture Collection (Autumn/Winter)"},
+      {"date":     "2015 Pret-a-Porter Collection (Spring/Summer)"},
+      {"date":     "2014 Pret-a-Porter Collection (Autumn/Winter)"},
+      {"date":     "2013 Pret-a-Porter Collection (Spring/Summer)"},
+      {"date":     "2012 Pret-a-Porter Collection (Autumn/Winter)"},
+      {"date":     "2011 Pret-a-Porter Collection (Spring/Summer)"}
+   ],
+   "images": [{
+      "src":      "./images/design-1_x600_sachin_bharti_Pexels.jpg",      
+      "alt":      "design-1",
+      "status":   "active"
+   }, {
+      "src":      "./images/design-2_x600_sk_ Pexels.jpg",      
+      "alt":      "design-2"          
+   }, {
+      "src":      "./images/design-3_x600_framania_Pexels.jpg",     
+      "alt":      "design-3"            
+   }],
+   "socials": [{
+      "name":     "facebook-square",
+      "url":      "https://facebook.com"      
+   }, {
+      "name":     "instagram",
+      "url":      "https://instagram.com" 
+   }, {
+      "name":     "pinterest-square",
+      "url":      "https://pinterest.com" 
+   }, {
+      "name":     "linkedin",
+      "url":      "https://linkedin.com" 
+   }],   
+   "address": {
+      "mapUrl":   "https://www.google.lt/maps/place/54%C2%B041'08.4%22N+25%C2%B016'55.3%22E",
+      "icon":     "map-marker-alt",
+      "company":  "Ineta's Fashion Studio",
+      "street":   "Stiliaus st. 115-25",
+      "post":     "08303 Vilnius",
+      "country":  "Lithuania"      
+   },
+   "phone": {
+      "icon":     "phone-volume",
+      "url":      "tel:+370.600.12345",
+      "number":   "+370 600 12345"
+   },
+   "email": {
+      "icon":     "envelope",
+      "name":     "ineta@bestmoda.style"
+   },
+   "messenger": {
+      "icon":     "facebook-messenger",
+      "url":      "https://m.me/XYZ",
+      "title":    "Message Me"
+   }     
+}

@@ -1,0 +1,20 @@
+input[type='email'],
+textarea[type='textarea'] {
+   &:invalid {
+      border: 2px solid $danger;
+   }
+
+   &:valid {
+      border: 2px solid $success;
+   }
+}
+
+input[type='checkbox'] {
+   &:invalid {
+      outline: 2px solid $danger;
+   }
+
+   &:valid {
+      outline: 2px solid $success;
+   }
+}

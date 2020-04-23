@@ -1,0 +1,22 @@
+.nav-link {
+   color: $dark;
+   &.active {
+      color: $info;   
+    }
+}
+ 
+.nav-tabs {
+   border-bottom: 0;
+
+   .nav-link {
+      border: none {
+         bottom: 0;
+         top-left-radius: 0;
+         top-right-radius: 0;
+      } 
+      
+      &.active {
+         border-bottom: 3px solid $dark;   
+      }
+   }  
+}

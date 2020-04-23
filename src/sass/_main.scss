@@ -1,0 +1,49 @@
+.bg-deco {
+   background-image: linear-gradient(
+      to top right,
+      $lightgrey,
+      $lightblue
+   );   
+}
+ 
+.banner {
+   background: {
+      color:  $lightblue;
+      position: center;
+      repeat: no-repeat;
+      size: cover; 
+   } 
+   
+   &-main {
+      &-img {
+         background-image: $main-image;
+         position: absolute;
+         height: 420px;
+         top: 220px;
+      }
+
+      &-name {
+         position: absolute;
+         left: 300px;
+         top: 330px;
+      }
+   }
+
+   &-contact-img {
+      background-image: $contact-image;
+      height: 620px;
+      left: 15px;
+   } 
+}
+
+.vertical-dash {
+   position: absolute;
+   top: 437px;
+   
+   > span {
+      height: 2.5rem;
+      position: relative;
+      left: 15px;
+      border-left: 3px solid $dark;
+   }   
+}

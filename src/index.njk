@@ -1,0 +1,40 @@
+{% extends './layouts/base.njk' %}
+{% set title = 'JI | Fashion' %}
+{% set body_class = 'home' %}
+{% block content %}
+   <div class="row" style="height: 420px;">
+      <div class="col-8"></div>
+      <div class="col-4 bg-deco"></div>
+   </div>
+   <!-- decoration -->
+   <div class="row">
+      <div class="sm-left col-1 pl-0">
+         {% for social in socials %}
+         <a class="nav-link" href="{{ social.url }}" target="blank">
+            <i class="fab fa-{{ social.name }}"></i>
+         </a>  
+         {% endfor %}         
+      </div>
+   </div>
+
+   <div class="row vertical-dash">
+      <span></span>
+   </div>
+
+   <div class="col-md-7 offset-md-2 banner banner-main-img"></div>
+   <div class="col-4 banner-main-name">
+      <h1>
+      Ineta &emsp;<span class="text-white">&#9620;</span>
+         <br/>Jankauskė
+   </h1>
+      <br/>
+      <h6>FASHION DESIGNER</h6>
+   </div>
+
+   <div class="row" style="height: 155px;">
+      <div class="col"></div>
+   </div>
+   <!-- empty /.row -->
+   <div class="col-4 bg-deco" style="height: 65px;"></div>
+   <!-- decoration -->
+{% endblock %}

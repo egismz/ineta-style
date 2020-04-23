@@ -1,0 +1,53 @@
+i {
+   color: $dark;
+   &:hover {
+      font-size: 2.5rem;   
+      transition: 0.2s;      
+   }
+} 
+
+.fa {
+   &-facebook-square:hover {
+      color: $facebook;           
+   }
+
+   &-instagram:hover {
+      color: $instagram;           
+   }
+
+   &-pinterest-square:hover {
+      color: $pinterest;           
+   }
+
+   &-linkedin:hover {
+      color: $linkedin;           
+   }
+
+   &-facebook-messenger:hover {
+      color: $messenger;
+   }
+}
+
+.fb-messenger {
+   span {
+      border-radius: 4px;
+      color: $dark;      
+      display: inline-block;     
+      white-space: nowrap;
+      font: {
+         size: 1rem;
+         family: $font-family-sans-serif;
+      }
+   }
+
+   a {
+      cursor: pointer;
+      text-decoration: none;
+   }
+} 
+ 
+.sm-left {
+   line-height: 0;
+   position: absolute;
+   top: 210px;
+} 

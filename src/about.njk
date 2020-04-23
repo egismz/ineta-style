@@ -1,0 +1,104 @@
+{% extends './layouts/base.njk' %}
+{% set title = 'JI | About Me' %}
+{% set body_class = 'about' %}
+{% block content %}
+  <section id="profile" class="row mt-4 pt-5"> 
+
+    {% include "./layouts/_gallery.njk" %}   
+    
+    <div class="col-8">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link active"
+            id="nav-home-tab"
+            data-toggle="tab"
+            href="#nav-home"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+            >Profile</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-profile-tab"
+            data-toggle="tab"
+            href="#nav-profile"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+            >Awards</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="nav-contact-tab"
+            data-toggle="tab"
+            href="#nav-contact"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false"
+            >Fashion Shows</a
+          >
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+        >
+          <h1 class="pt-3">Profile.</h1>
+          <h4 class="font-weight-normal pt-1">
+            Ineta Jankauskė is a leading fashion designer.
+          </h4>
+          <h6 class="font-weight-normal pt-2 pb-4">
+            <i class="fas fa-{{ awards[0].icon }}"></i>&emsp;{{ awards[1].place }}
+          </h6>
+          <p class="font-weight-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            ratione labore consequatur officia minima voluptate quod
+            quaerat, impedit tempore sit earum amet incidunt quasi rem!
+          </p>
+          <p class="font-weight-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis sit qui, obcaecati natus ipsum, molestiae esse
+            distinctio maiores in tempore, veritatis eum dolore nihil
+            nesciunt sint. Earum, dolore nesciunt. Consectetur provident
+            velit ducimus ea laudantium, praesentium voluptatum alias
+            similique atque maiores cupiditate fuga architecto non
+            voluptas perferendis repudiandae dolores ex!
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+        >
+          <h1 class="py-3">Ineta's Awards.</h1>
+          {% for award in awards %}
+            <h6 class="font-weight-normal pt-2 pb-2">
+              <i class="fas fa-{{ award.icon }}"></i>&emsp;{{ award.place }}
+            </h6>
+            <p class="font-weight-light">
+              {{ award.content }}
+            </p>
+          {% endfor %}          
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-contact"
+          role="tabpanel"
+          aria-labelledby="nav-contact-tab"
+        >
+        <h1 class="pt-3">Fashion Shows.</h1>
+        {% for show in shows %}
+        <h6 class="font-weight-normal pt-2 pb-2">
+        {{ show.date }} 
+        </h6> 
+        {% endfor %}        
+        </div>
+      </div>
+  </section>
+  {% endblock %}
