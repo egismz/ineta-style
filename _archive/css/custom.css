@@ -1,0 +1,107 @@
+.bg-custom1 {
+  background-color: rgba(180, 211, 211, 1);
+}
+
+.bg-gradient-custom1 {
+  background-image: linear-gradient(
+    to top right,
+    rgba(226, 232, 232, 0),
+    rgb(180, 211, 211, 1)
+  );
+}
+
+.bg-image-main {
+  background-image: url(../images/female_bruce_mars_Pexels-compressor.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 420px;
+  top: 210px;
+}
+
+.bg-image-contact {
+  background-image: url(../images/female2_475x_Alexander_Krivitskiy_Pexels.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 620px;
+  left: 15px;
+}
+
+.fb-messenger span {
+  border-radius: 4px;
+  color: var(--dark);
+  font-size: 1rem;
+  display: inline-block;
+  font-family: var(--font-family-sans-serif);
+  white-space: nowrap;
+}
+
+.fb-messenger a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+i:hover {
+  font-size: 2.5rem;
+  transition: 0.2s;
+}
+
+.item-vertical {
+  position: absolute;
+  top: 437px;
+}
+
+.item-vertical > span {
+  height: 2.5rem;
+  position: relative;
+  left: 15px;
+  border-left: 3px solid var(--dark);
+}
+
+.main-name {
+  position: absolute;
+  left: 300px;
+  top: 330px;
+}
+
+.sm-left {
+  line-height: 0;
+  position: absolute;
+  top: 210px;
+}
+
+/* Bootstrap Changes*/
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid var(--dark);
+}
+
+input[type='email']:invalid,
+textarea[type='textarea']:invalid {
+  border: 2px solid var(--danger);
+}
+
+input[type='email']:valid,
+textarea[type='textarea']:valid {
+  border: 2px solid var(--success);
+}
+
+input[type='checkbox']:invalid {
+  outline: 2px solid var(--danger);
+}
+
+input[type='checkbox']:valid {
+  outline: 2px solid var(--success);
+}
