@@ -1,4 +1,4 @@
-# webs_site.com_bootstrap_nodejs
+# webs_ineta.style_bootstrap_nodejs
 
 My simple site and experiment using **Bootstrap**, **Node.js** development enviroment. Redesigned the original version of the project - `Nunjucks` and `Sass`.
 
