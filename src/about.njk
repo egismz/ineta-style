@@ -2,10 +2,10 @@
 {% set title = 'JI | About Me' %}
 {% set body_class = 'about' %}
 {% block content %}
-  <section id="profile" class="row mt-4 pt-5"> 
+  <section id="profile" class="row mt-4 pt-5">
 
-    {% include "./layouts/_gallery.njk" %}   
-    
+    {% include "./layouts/_gallery.njk" %}
+
     <div class="col-8">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -84,7 +84,7 @@
             <p class="font-weight-light">
               {{ award.content }}
             </p>
-          {% endfor %}          
+          {% endfor %}
         </div>
         <div
           class="tab-pane fade"
@@ -92,13 +92,14 @@
           role="tabpanel"
           aria-labelledby="nav-contact-tab"
         >
-        <h1 class="pt-3">Fashion Shows.</h1>
-        {% for show in shows %}
-        <h6 class="font-weight-normal pt-2 pb-2">
-        {{ show.date }} 
-        </h6> 
-        {% endfor %}        
+          <h1 class="pt-3">Fashion Shows.</h1>
+          {% for show in shows %}
+            <h6 class="font-weight-normal pt-2 pb-2">
+              {{ show.date }}
+            </h6>
+          {% endfor %}
         </div>
       </div>
+    </div>
   </section>
-  {% endblock %}
+{% endblock %}

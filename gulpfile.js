@@ -4,14 +4,11 @@ const gulp = require('gulp')
     , postcss = require('gulp-postcss')
     , autoprefixer = require('autoprefixer')
     , pxtorem = require('postcss-pxtorem')
-    , cssnano = require('cssnano')
-    , perfectionist = require('perfectionist')
-    , rename = require('gulp-rename')
+    , cssnano = require('cssnano')   
+    , rename = require('gulp-rename')   
     , nunjucksRender = require('gulp-nunjucks-render')
     , data = require('gulp-data')
     , fs = require('fs')
-    , htmlmin = require('gulp-htmlmin')
-    , prettify = require('gulp-html-prettify')
     , imagemin = require('gulp-imagemin')
     , bs = require('browser-sync').create()
 
@@ -24,10 +21,7 @@ function styles() {
         pxtorem({            
           propList: ['*']
         }),
-        cssnano(),
-        perfectionist({ 
-          format: 'compact' 
-        })
+        cssnano()
     ])) 
     .pipe(rename({
         basename: 'styles',
@@ -39,15 +33,13 @@ function styles() {
 }
 
 function templates() {
-  return gulp.src('./src/*.njk')
+  return gulp.src('./src/*.njk')    
     .pipe(data(function() {
         return JSON.parse(fs.readFileSync('./src/data/data.json', 'utf8'))
     }))
     .pipe(nunjucksRender({
         path: ['./src']
-    }))   
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(prettify({indent_char: ' ', indent_size: 3}))
+    }))
     .pipe(gulp.dest('./dist'));           
 }
 
@@ -64,9 +56,9 @@ function server() {
     }
   });
 
-  gulp.watch('./src/sass/*.scss', styles); 
+  gulp.watch('./src/sass/**/*.scss', styles);  
   gulp.watch('./src/images/**/*', images);  
-  gulp.watch('./src/**/*.+(njk|json)', templates).on('change', bs.reload);   
+  gulp.watch('./src/**/*.+(njk|json)', templates).on('change', bs.reload);  
   gulp.watch('./*.html').on('change', bs.reload);
 }
  

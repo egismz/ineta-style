@@ -6,13 +6,13 @@
    >
       <div class="carousel-inner">
          {% for image in images %}           
-         <div class="carousel-item {% if image.status === 'active' %} active {% endif %}">                        
-            <img
-               src="{{ image.src }}"
-               class="d-block w-100"
-               alt="{{ image.alt }}"
-            />                       
-         </div>           
+            <div class="carousel-item {% if image.status === 'active' %} active {% endif %}">                        
+               <img
+                  src="{{ image.src }}"
+                  class="d-block w-100"
+                  alt="{{ image.alt }}"
+               />                       
+            </div>           
          {% endfor %}         
       </div>
       <a
