@@ -28,7 +28,7 @@ function styles() {
         suffix: '.bundle'
     }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./dist/styles'))
+    .pipe(gulp.dest('./public/styles'))
     .pipe(bs.stream());
 }
 
@@ -40,19 +40,19 @@ function templates() {
     .pipe(nunjucksRender({
         path: ['./src']
     }))
-    .pipe(gulp.dest('./dist'));           
+    .pipe(gulp.dest('./public'));           
 }
 
 function images() {
   return gulp.src('./src/images/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./dist/images'));
+    .pipe(gulp.dest('./public/images'));
 }
 
 function server() {
   bs.init({
     server: {
-        baseDir: './dist'
+        baseDir: './public'
     }
   });
 
