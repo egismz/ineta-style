@@ -14,19 +14,9 @@
       size: cover; 
    } 
    
-   &-main {
-      &-img {
-         background-image: $main-image;
-         position: absolute;
-         height: 420px;
-         top: 220px;
-      }
-
-      &-name {
-         position: absolute;
-         left: 300px;
-         top: 330px;
-      }
+   &-main-img {     
+      background-image: $main-image;        
+      height: 420px;
    }
 
    &-contact-img {
