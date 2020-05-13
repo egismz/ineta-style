@@ -65,5 +65,5 @@ function server() {
 exports.styles = styles;
 exports.templates = templates;
 exports.images = images;
-exports.build = gulp.series(styles, templates);
+exports.build = gulp.series(styles, templates, images);
 exports.default = server;
