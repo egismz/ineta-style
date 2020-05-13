@@ -24,7 +24,8 @@ aria-hidden="true"
                <div class="form-group">
                   {{ form.label(id="message-text", class="col-form-label", text="Message:") }}
                   {{ form.textarea(id="message-text", class="form-control", placeholder="Here you can write a message to Ineta...") }}
-               </div>             
+               </div> 
+               <div data-netlify-recaptcha="true"></div>            
                <div class="modal-footer">                              
                   <button type="submit" class="btn btn-primary">Send message</button>
                </div>
