@@ -15,7 +15,7 @@ aria-hidden="true"
          </button>
          </div>
          <div class="modal-body">
-            <form name="request" method="POST" data-netlify="true">
+            <form name="request" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                {% import "./macros/form-macro.njk" as form %}
                <div class="form-group">
                   {{ form.label(id="exampleInputEmail1", class="col-form-label", text="Sender email:") }}
