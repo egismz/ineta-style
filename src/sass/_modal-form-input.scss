@@ -8,13 +8,3 @@ textarea[type='textarea'] {
       border: 2px solid $success;
    }
 }
-
-input[type='checkbox'] {
-   &:invalid {
-      outline: 2px solid $danger;
-   }
-
-   &:valid {
-      outline: 2px solid $success;
-   }
-}

@@ -25,9 +25,3 @@
 {% macro label(id, class, text) %}
    <label for="{{ id }}" class="{{ class }}">{{ text }}</label>
 {% endmacro %}
-
-{% macro checklabel(id, class) %}
-   <label for="{{ id }}" class="{{ class }}">
-      Agree to <a href="#">terms and conditions</a> before submitting.
-   </label>
-{% endmacro %}
