@@ -2,41 +2,41 @@
 {% set title = 'JI | Fashion' %}
 {% set body_class = 'home' %}
 {% block content %}
-   <div class="row" style="height: 220px;">
-      <div class="col-8"></div>
-      <div class="col-4 bg-deco"></div>
-   </div>
-   <!-- decoration -->
-   <div class="row">
-      <div class="sm-left col-1 pl-0">
-         {% for social in socials %}
-            <a class="nav-link" href="{{ social.url }}" target="blank">
-               <i class="fab fa-{{ social.name }}"></i>
-            </a>
-         {% endfor %}
-      </div>
-   </div>
+  <div class="row" style="height: 220px;">
+    <div class="col-8"></div>
+    <div class="col-4 bg-deco"></div>
+  </div>
+  <!-- decoration -->
+  <div class="row">
+    <div class="sm-left col-1 pl-0">
+      {% for social in socials %}
+        <a class="nav-link" href="{{ social.url }}" target="blank">
+          <i class="fab fa-{{ social.name }}"></i>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
 
-   <div class="row vertical-dash">
-      <span></span>
-   </div>
+  <div class="row vertical-dash">
+    <span></span>
+  </div>
 
-   <div class="row">
-      <div class="col-3 offset-1">
-         <h1>
+  <div class="row">
+    <div class="col-3 offset-1">
+      <h1>
          Ineta &emsp;<span class="text-info">&#9620;</span>
-            <br/>Jankauskė
+        <br/>Jankauskė
          </h1>
-         <br/>
-         <h6>FASHION DESIGNER</h6>
-      </div>
-      <div class="col-7 banner banner-main-img"></div> 
-   </div>
+      <br/>
+      <h6>FASHION DESIGNER</h6>
+    </div>
+    <div class="col-7 banner banner-main-img"></div>
+  </div>
 
-   <div class="row" style="height: 85px;">
-      <div class="col-5 ml-3 bg-deco"></div>
-      <div class="col"></div>
-      <div class="col-1 bg-deco"></div>
-   </div>
-   <!-- decoration -->
+  <div class="row" style="height: 85px;">
+    <div class="col-5 ml-3 bg-deco"></div>
+    <div class="col"></div>
+    <div class="col-1 bg-deco"></div>
+  </div>
+  <!-- decoration -->
 {% endblock %}

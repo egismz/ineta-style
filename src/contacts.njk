@@ -1,59 +1,62 @@
 {% extends './layouts/base.njk' %}
 {% set title = 'JI | Contact Me' %}
 {% set body_class = 'contacts' %}
-{% block content %}  
-   <section id="contacts" class="row mt-5 pt-5">
-      <div
+{% block content %}
+  <section id="contacts" class="row mt-5 pt-5">
+    <div
       class="col-md-4 banner banner-contact-img text-white text-center d-flex align-items-center"
       >
       <h1>Contact Ineta&nbsp;<span class="text-white">&#9601;</span></h1>
-      <br />
-      <h6>LET'S STAY IN TOUCH</h6>
-      </div>
-      <div class="col-md-8">
+      <br/>
+      <h6>STAY IN TOUCH</h6>
+    </div>
+    <div class="col-md-8">
       <div class="row">
-         <div class="col-md-11 offset-md-1 bg-deco">
-            <h1 class="pb-3">Contacts.</h1>
-            <p class="pb-5">Contact me if you need help with anything.</p>
-         </div>
-         <div class="bg-deco"></div>
-         <address class="col-md-6 pt-5 offset-md-1">
-            <a href="{{ address.mapUrl }}}" target="blank">
+        <div class="col-md-11 offset-md-1 bg-deco">
+          <h1 class="pb-3">Contacts.</h1>
+          <p class="pb-5">Contact me if you need help with anything.</p>
+        </div>
+        <div class="bg-deco"></div>
+        <address class="col-md-6 pt-5 offset-md-1">
+          <a href="{{ address.mapUrl }}}" target="blank">
             <p class="btn pt-1 text-left">
-               <i class="fas fa-{{ address.icon }}"></i><br>
-               <span class="font-weight-bolder"
-               >{{ address.company }}</span><br />               
-               {{ address.street }}<br />
-               {{ address.post }}<br />
-               {{ address.country }}
+              <i class="fas fa-{{ address.icon }}"></i><br>
+              <span class="font-weight-bolder"
+               >{{ address.company }}</span><br/>
+              {{ address.street }}<br/>
+              {{ address.post }}<br/>
+              {{ address.country }}
             </p>
-            </a>
-         </address>
-         <div class="col-md pt-5">
-            <a href="{{ phone.url }}" class="btn text-dark text-decoration-none"
-            ><i class="fas fa-{{ phone.icon }}"></i>&emsp;{{ phone.number }}</a >
-         </div>
-         <!-- Email Form [start]-->
-         <div class="col-md-6 offset-md-1">
-            <button 
+          </a>
+        </address>
+        <div class="col-md pt-5">
+          <a href="{{ phone.url }}" class="btn text-dark text-decoration-none"
+            >
+            <i class="fas fa-{{ phone.icon }}"></i>&emsp;{{ phone.number }}</a >
+        </div>
+        <!-- Email Form [start]-->
+        <div class="col-md-6 offset-md-1">
+          <button 
             type="button" 
             class="btn" 
             data-toggle="modal" 
             data-target="#exampleModal" 
-            ><i class="fas fa-{{ email.icon }}"></i>&emsp;{{ email.name }}
-            </button>
-            
-            {% include "./layouts/_modal-form.njk" %}
-            
-         </div>
-         <!-- Email Form [end]-->
-         <div class="contact col-md fb-messenger">
-            <a class="btn" target="_blank" href="{{ messenger.url }}">
-            <span><i class="fab fa-{{ messenger.icon }}"></i>&emsp; 
+            >
+            <i class="fas fa-{{ email.icon }}"></i>&emsp;{{ email.name }}
+          </button>
+
+          {% include "./layouts/_modal-form.njk" %}
+
+        </div>
+        <!-- Email Form [end]-->
+        <div class="contact col-md fb-messenger">
+          <a class="btn" target="_blank" href="{{ messenger.url }}">
+            <span>
+              <i class="fab fa-{{ messenger.icon }}"></i>&emsp; 
                {{ messenger.title }}</span>
-            </a>
-         </div>
+          </a>
+        </div>
       </div>
-      </div>
-   </section>
+    </div>
+  </section>
 {% endblock %}

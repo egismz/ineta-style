@@ -1,27 +1,23 @@
 <footer>
-   <div class="row">
-      <div class="col-12 pr-0">
-         <hr/>
-         <div class="row">
-            <div class="col-md-6 col-sm-12">
-               <p>
-            &copy;2018 MI Talent. Designed by Tranmautritam for Mass
-            Impressions.<br/>
-            &copy;2019 Redesigned by egidum.
-            </p>
-            </div>
-            <div
+  <div class="row">
+    <div class="col-12 pr-0">
+      <hr/>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <p>&copy;2019 Developed by egidum.</p>
+        </div>
+        <div
             class="col-md-6 col-sm-12 d-flex justify-content-md-end pr-0"
          >
-               <div class="d-inline-flex">
-                  {% for social in socials %}
-                  <a class="nav-link" href="{{ social.url }}" target="blank">
-                     <i class="fab fa-{{ social.name }}"></i>
-                  </a>  
-                  {% endfor %}                  
-               </div>
-            </div>
-         </div>
+          <div class="d-inline-flex">
+            {% for social in socials %}
+              <a class="nav-link" href="{{ social.url }}" target="blank">
+                <i class="fab fa-{{ social.name }}"></i>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
 </footer>

@@ -1,5 +1,5 @@
-{% macro input(name, value="", class, type, id, placeholder) %}
-   <input 
+{% macro input(name, value = "", class, type, id, placeholder) %}
+  <input 
       class="{{ class }}" 
       name="{{ name }}" 
       value="{{ value|e }}" 
@@ -10,8 +10,8 @@
    >
 {% endmacro %}
 
-{% macro textarea(name="textarea", value="", class, type="textarea", id, placeholder) %}
-   <textarea                               
+{% macro textarea(name = "textarea", value = "", class, type = "textarea", id, placeholder) %}
+  <textarea                               
       class="{{ class }}"
       name="{{ name }}"
       value="{{ value|e }}"
@@ -23,5 +23,5 @@
 {% endmacro %}
 
 {% macro label(id, class, text) %}
-   <label for="{{ id }}" class="{{ class }}">{{ text }}</label>
+  <label for="{{ id }}" class="{{ class }}">{{ text }}</label>
 {% endmacro %}
