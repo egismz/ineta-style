@@ -1,6 +1,6 @@
 # webs_ineta.style
 
-My simple site and experiment using **Bootstrap**, **Node.js** development enviroment. Redesigned the original version of the project - **Nunjucks** and **Sass**.
+My simple site and an Experiment using **Bootstrap**, **Node.js** development enviroment. Redesigned the original version of the project - **Nunjucks** and **Sass**. This is an Example of a Non-Responsive Design.
 
 **Tech stack:**
 
