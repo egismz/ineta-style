@@ -18,3 +18,7 @@ For back-end:
 - [Express](http://expressjs.com/) - web app framework for Node.js
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - programming language
 - [Netlify](https://www.netlify.com/) - hosting and serverless backend services for web applications and static websites.
+
+Deploy:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://ineta-style.netlify.app/)
