@@ -1,43 +1,51 @@
 .view {
-   min-height: 80vh;
+  min-height: 80vh;
 }
 
 .bg-deco {
-   background-image: linear-gradient(
-      to top right,
-      $lightgrey,
-      $lightblue
-   );   
+  background-image: linear-gradient(to top right, $lightgrey, $lightblue);
 }
- 
-.banner {
-   background: {
-      color:  $lightblue;
-      position: center;
-      repeat: no-repeat;
-      size: cover; 
-   } 
-   
-   &-main-img {     
-      background-image: $main-image;        
-      height: 420px;
-   }
 
-   &-contact-img {
-      background-image: $contact-image;
-      height: 620px;
-      left: 15px;
-   } 
+.banner {
+  background: {
+    color: $lightblue;
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+
+  &-main-img {
+    background-image: $main-image;
+    height: 420px;
+  }
+
+  &-contact-img {
+    background-image: $contact-image;
+    height: 620px;
+    left: 15px;
+  }
 }
 
 .vertical-dash {
-   position: absolute;
-   top: 437px;
-   
-   > span {
-      height: 2.5rem;
-      position: relative;
-      left: 15px;
-      border-left: 3px solid $dark;
-   }   
+  position: absolute;
+  top: 437px;
+
+  > span {
+    height: 2.5rem;
+    position: relative;
+    left: 15px;
+    border-left: 3px solid $dark;
+  }
+}
+
+.switcher {
+  display: none;
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+@media (max-width: 995px) {
+  .switcher {
+    display: inline-block;
+  }
 }
