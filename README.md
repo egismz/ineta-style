@@ -1,4 +1,6 @@
-# webs_ineta.style
+# ineta.style
+
+![site preview](https://github.com/egismz/ineta-style/blob/master/inet-style.png)
 
 My simple site and an Experiment using **Bootstrap**, **Node.js** development enviroment. Redesigned the original version of the project - **Nunjucks** and **Sass**. This is an Example of a Non-Responsive Design.
 
