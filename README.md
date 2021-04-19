@@ -1,4 +1,4 @@
-# ineta.style
+# [ineta.style](https://ineta-style.netlify.app/)
 
 ![site preview](https://github.com/egismz/ineta-style/blob/master/inet-style.png)
 
