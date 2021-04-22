@@ -8,6 +8,7 @@ My simple site and an Experiment using **Bootstrap**, **Node.js** development en
 
 - [Bootstrap 4](https://getbootstrap.com/) - open-source CSS framework
 - [Pexels](https://www.pexels.com/) - free stock photos
+- [Font Awesome](https://fontawesome.com/) - the internet's favorite icon set
 - [Nunjucks](https://mozilla.github.io/nunjucks/) - templating language for JavaScript
 - [Sass](https://sass-lang.com/) - CSS preprocessor
 - [Gulp](https://gulpjs.com/) - task/build runner for development
