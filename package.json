@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Nodejs + Express + Gulp",
   "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+  "scripts": {    
+    "gulp": "gulp default",
+    "gulp:build": "gulp build",
+    "gulp:styles": "gulp styles",
+    "gulp:temp": "gulp templates",
+    "gulp:img": "gulp images"
   },
   "author": "Egidijus Mazgelis",
   "license": "MIT",
